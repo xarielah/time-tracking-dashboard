@@ -47,26 +47,44 @@ main {
 
 .work {
   background-color: #ff8c66 !important;
+  background-image: url(../svg/icon-work.svg);
+  background-repeat: no-repeat;
+  background-position: right 10% top;
 }
 
 .play {
   background-color: #56c2e6 !important;
+  background-image: url(../svg/icon-play.svg);
+  background-repeat: no-repeat;
+  background-position: right 10% top;
 }
 
 .study {
   background-color: #ff5c7c !important;
+  background-image: url(../svg/icon-study.svg);
+  background-repeat: no-repeat;
+  background-position: right 10% top;
 }
 
 .exercise {
   background-color: #4acf81 !important;
+  background-image: url(../svg/icon-exercise.svg);
+  background-repeat: no-repeat;
+  background-position: right 10% top;
 }
 
 .social {
   background-color: #7536d3 !important;
+  background-image: url(../svg/icon-social.svg);
+  background-repeat: no-repeat;
+  background-position: right 10% top;
 }
 
 .selfcare {
   background-color: #f1c65b !important;
+  background-image: url(../svg/icon-self-care.svg);
+  background-repeat: no-repeat;
+  background-position: right 10% top;
 }
 
 .wrapper {

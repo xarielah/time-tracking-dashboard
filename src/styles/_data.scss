@@ -18,21 +18,39 @@ $boxHWParams: 240px;
 
 .work {
     background-color: $work !important;
+    background-image: url(../svg/icon-work.svg);
+    background-repeat: no-repeat;
+    background-position: right 10% top;
 }
 .play {
     background-color: $play !important;
+    background-image: url(../svg/icon-play.svg);
+    background-repeat: no-repeat;
+    background-position: right 10% top;
 }
 .study {
     background-color: $study !important;
+    background-image: url(../svg/icon-study.svg);
+    background-repeat: no-repeat;
+    background-position: right 10% top;
 }
 .exercise {
     background-color: $exercise !important;
+    background-image: url(../svg/icon-exercise.svg);
+    background-repeat: no-repeat;
+    background-position: right 10% top;
 }
 .social {
     background-color: $social !important;
+    background-image: url(../svg/icon-social.svg);
+    background-repeat: no-repeat;
+    background-position: right 10% top;
 }
 .selfcare {
     background-color: $selfcare !important;
+    background-image: url(../svg/icon-self-care.svg);
+    background-repeat: no-repeat;
+    background-position: right 10% top;
 }
 
 .wrapper {
