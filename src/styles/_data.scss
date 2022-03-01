@@ -1,0 +1,121 @@
+//  Cats
+$work: hsl(15, 100%, 70%);
+$play: hsl(195, 74%, 62%);
+$study: hsl(348, 100%, 68%);
+$exercise: hsl(145, 58%, 55%);
+$social: hsl(264, 64%, 52%);
+$selfcare: hsl(43, 84%, 65%);
+
+//  General
+$boxBg: hsl(235, 46%, 20%);
+$boxBgLighter: hsl(230, 46%, 25%);
+$neutralText: hsl(235, 45%, 61%);
+$mainText: hsl(236, 100%, 87%);
+$text: ghostwhite;
+
+$radius: 12px;
+$boxHWParams: 240px;
+
+.work {
+    background-color: $work !important;
+}
+.play {
+    background-color: $play !important;
+}
+.study {
+    background-color: $study !important;
+}
+.exercise {
+    background-color: $exercise !important;
+}
+.social {
+    background-color: $social !important;
+}
+.selfcare {
+    background-color: $selfcare !important;
+}
+
+.wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    width: 780px;
+
+    .main-data-viewer {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        margin: 10px;
+        height: $boxHWParams;
+        width: $boxHWParams;
+        border-radius: $radius;
+
+        @media (max-width: 1005px) {
+            height: 170px;
+            width: 95%;
+        }
+    }
+
+    .data-box {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        color: $text;
+        background-color: $boxBg;
+
+        border-radius: $radius;
+        height: 55%;
+        padding: 30px;
+
+        @media (max-width: 1005px) {
+            padding: 25px 30px;
+            height: max-content;
+            justify-content: center;
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.95rem;
+            font-weight: 300;
+
+            .menu-icon {
+                cursor: pointer;
+            }
+        }
+
+        .timeframes {
+            margin-bottom: 10px;
+
+            .current-timeframe {
+                font-size: 3.5rem;
+                @media (max-width: 1005px) {
+                    font-size: 2.25rem;
+                }
+            }
+
+            .previous-timeframe {
+                color: $mainText;
+                font-size: 0.85rem;
+                font-weight: 300;
+            }
+
+            @media (max-width: 1005px) {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                margin: 5px 0;
+            }
+        }
+    }
+
+    .data-box:hover {
+        background-color: $boxBgLighter;
+    }
+
+    @media (max-width: 1005px) {
+        flex-direction: column;
+        margin: 0 auto;
+        width: 100%;
+    }
+}

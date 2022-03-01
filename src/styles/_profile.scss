@@ -1,0 +1,98 @@
+//  General
+$profileBg: hsl(246, 80%, 60%);
+$mainText: hsl(236, 100%, 87%);
+$mainTextLighter: hsl(236, 100%, 90%);
+$boxBg: hsl(235, 46%, 20%);
+$radius: 12px;
+
+.profile-wrapper {
+    flex-shrink: 0;
+
+    border-radius: $radius;
+    background-color: $boxBg;
+    margin: 10px;
+
+    width: 240px;
+
+    @media (max-width: 1005px) {
+        width: 95%;
+        max-width: 95%;
+    }
+
+    .user-details {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        border-radius: $radius;
+        background-color: $profileBg;
+        padding: 30px;
+        height: 60%;
+
+        @media (max-width: 1005px) {
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+        .user-avatar {
+            width: 70px;
+            border: 5px white solid;
+            box-shadow: 0 5px 25px hsla(0, 0%, 10%, 0.5);
+            border-radius: 50%;
+            margin: 10px 0;
+        }
+
+        .details-wrapper {
+            @media (max-width: 1005px) {
+                margin-left: 8px;
+            }
+        }
+
+        .user-title {
+            color: $mainText;
+            font-size: 0.9rem;
+            margin-top: 20px;
+
+            @media (max-width: 1005px) {
+                width: max-content;
+            }
+        }
+
+        .user-fullname {
+            font-size: 2.6rem;
+            color: ghostwhite;
+            font-weight: 300;
+
+            @media (max-width: 1005px) {
+                width: max-content;
+                font-size: 1.5rem;
+                margin: 5px;
+            }
+        }
+    }
+
+    .data-type {
+        font-size: 0.95rem;
+        display: flex;
+        flex-direction: column;
+        padding: 10px 20px;
+
+        @media (max-width: 1005px) {
+            flex-direction: row;
+            justify-content: space-between;
+            font-size: 1.2rem;
+            padding: 10px 30px;
+        }
+
+        .data-link {
+            color: $mainText;
+            margin: 10px 0;
+            cursor: pointer;
+        }
+        .data-link:hover {
+            color: $mainTextLighter;
+        }
+        .active {
+            color: $mainTextLighter;
+        }
+    }
+}

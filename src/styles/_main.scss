@@ -1,0 +1,35 @@
+// Font size: 18px
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap");
+
+// General
+$bg: hsl(226, 43%, 10%);
+
+body {
+    background-color: $bg;
+    font-family: "Rubik", sans-serif;
+    font-size: 18px;
+
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+
+    @media (max-width: 1005px) {
+        height: max-content;
+    }
+}
+
+main {
+    display: flex;
+
+    height: max-content;
+    width: 100%;
+    margin: 0 auto;
+
+    @media (max-width: 1005px) {
+        flex-direction: column;
+    }
+}
